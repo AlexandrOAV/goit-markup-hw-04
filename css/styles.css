@@ -23,6 +23,7 @@
 --background-section-team:#F4F4FD;
 --gradien-hero:linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7));
+--costumers-border:#8E8F99;
 
 
 }
@@ -74,7 +75,7 @@ background-color: var(--background-site);
   max-width: 1158px;
   margin:0 auto;
   padding:0 15px;
-  /* outline:1px solid tomato; */
+  outline:1px solid tomato;
 }
 
 /* -----------------hedader----------------- */
@@ -155,7 +156,7 @@ color: var(--nav-menu-color);
    padding-top: 188px;
    padding-bottom: 188px; 
    max-width: 1440px;
-   margin: auto;
+   margin:0 auto;
   text-align: center;
   background-color: var(--background-color-herofut);
   background-image: var(--gradien-hero),
@@ -213,11 +214,27 @@ color: var(--nav-menu-color);
     letter-spacing: 0.02em; 
     color: var(--title-color-hhh);
 }
-.best-item-text {
+.best-item{
   max-width: 264px;
-   line-height: 1.5;
-   letter-spacing: 0.02em;
 }
+.best-item-text {
+  width: 100%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.best-item-icon {
+
+}
+.best-item-icon-block{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+  /* padding: 24px 100px; */
+  width: 100%;
+  height: 112px;
+  background-color: var(--background-radio-button);
+}
+
 
 /*------------ Section 3 What are we doing---------------- */
 .job-heading, .team-heading, .custom-heading {
@@ -269,8 +286,9 @@ color: var(--nav-menu-color);
   text-align: center;
 }
 .team-item {
-  width: calc((100%-3*24)/4);
-  padding: 0 16px 32px;
+  width: calc((100%-3*24px)/4);
+  padding top: 0;
+  padding-bottom: 32px;
   border-radius: 0 0 4px 4px;
   background-color: var(--background-site);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
@@ -289,6 +307,7 @@ color: var(--nav-menu-color);
   height: 40px;
 }
 
+
 .social-link {
   display: flex;
   justify-content: center;
@@ -298,8 +317,8 @@ color: var(--nav-menu-color);
   border-radius: 50%;
   background-color: var(--button-background);
 }
-.social-ikon {
-  fill: var(--background-site);
+.social-link:hover, .social-link:focus {
+  background-color: var(--button-portfolio-activ);
 }
 
 /* ----------------CUSTOMERS--------------------------- */
@@ -307,9 +326,28 @@ color: var(--nav-menu-color);
   padding-top: 130px;
   padding-bottom: 120px;
 }
-.custom-header{
-
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
+
+.costomers-item {
+  width: calc((100%-5*24)/6);
+  height: 88px;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--costumers-border);
+  border-radius: 4px;
+}
+
  /*----------------- futer-------------------------------- */
  .last {
   background-color: var(--background-color-herofut);
