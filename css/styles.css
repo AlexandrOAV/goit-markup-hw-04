@@ -222,14 +222,10 @@ color: var(--nav-menu-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.best-item-icon {
-
-}
 .best-item-icon-block{
-      display: flex;
-        justify-content: center;
-        align-items: center;
-  /* padding: 24px 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 112px;
   background-color: var(--background-radio-button);
@@ -261,6 +257,7 @@ color: var(--nav-menu-color);
   background-color: var(--background-section-team);
   padding-top: 120px;
   padding-bottom: 120px;
+  
 }
 .team-list{
   display: flex;
@@ -286,8 +283,8 @@ color: var(--nav-menu-color);
   text-align: center;
 }
 .team-item {
-  width: calc((100%-3*24px)/4);
-  padding top: 0;
+  width: calc((100% - 3*24px) / 4);
+  padding-top: 0;
   padding-bottom: 32px;
   border-radius: 0 0 4px 4px;
   background-color: var(--background-site);
@@ -300,6 +297,7 @@ color: var(--nav-menu-color);
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin: auto;
 }
 
 .social-item {
@@ -321,22 +319,23 @@ color: var(--nav-menu-color);
   background-color: var(--button-portfolio-activ);
 }
 
-/* ----------------CUSTOMERS--------------------------- */
-.costomers-section{
+/*--------------Customers------------------ */ 
+.customers-section{
   padding-top: 130px;
   padding-bottom: 120px;
 }
 .customers-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 24px;
-}
+    }
 
-.costomers-item {
-  width: calc((100%-5*24)/6);
+.customers-item {
+  width: calc((100% - 5*24px) / 6);
   height: 88px;
 }
+
 
 .customers-link {
   display: flex;
@@ -346,8 +345,19 @@ color: var(--nav-menu-color);
   height: 100%;
   border: 1px solid var(--costumers-border);
   border-radius: 4px;
+  color: var(--costumers-border);
+  
 }
-
+.customers-icon {
+  fill: currentColor;
+ }
+ .customers-link:is(:hover, :focus) {
+border-color: var(--active-address-color);
+color: var(--active-address-color);
+ }
+    .customers-link:is(:hover, :focus) .customers-icon {
+      fill: currentColor;
+    }
  /*----------------- futer-------------------------------- */
  .last {
   background-color: var(--background-color-herofut);
