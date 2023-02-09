@@ -361,24 +361,65 @@ color: var(--active-address-color);
  /*----------------- futer-------------------------------- */
  .last {
   background-color: var(--background-color-herofut);
+  padding-top: 100px;
+  padding-bottom: 100px;
  }
  footer .link-logo {
 color:var(--text-hero);
 margin-right: 0;
-
  }
- 
+ .last-block{
+  display: flex;
+  gap: 120px;
+  margin: auto;
+ }
+ .last-social>.last-social-header{
+  margin-bottom: 16px;
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--text-hero);
+ }
   .last-text {
   color: var(--text-futer-color);
   margin-top: 16px;
   max-width: 264px;
-
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
  }
 .last {
   padding-top: 100px;
   padding-bottom: 100px;
   }
+.last-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: auto;
+}
 
+.last-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+
+.last-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+
+.last-social-link:hover,
+.last-social-link:focus {
+  background-color: #31D0AA;
+}
 
  /* |||||||||||||---------PAGE PORTFOLIO------------|||||||||||| */
 
@@ -404,6 +445,7 @@ padding-bottom: 120px;
   background-color:var(--background-radio-button);
   cursor: pointer;
    }
+   
  .radio-filter:hover, .radio-filter:focus {
   color: var(--text-button-portfolio-active);
   background-color: var(--button-portfolio-activ);
