@@ -397,7 +397,7 @@ margin-right: 0;
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .last-social-item {
@@ -445,7 +445,7 @@ padding-bottom: 120px;
   background-color:var(--background-radio-button);
   cursor: pointer;
    }
-   
+
  .radio-filter:hover, .radio-filter:focus {
   color: var(--text-button-portfolio-active);
   background-color: var(--button-portfolio-activ);
